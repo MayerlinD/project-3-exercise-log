@@ -3,7 +3,7 @@
     --tan-1: #FBF9F6;
     --tan-2: #E7E2DD;
     --tan-3: #E2D9D1;
-    --tan-4: #D3C1AE;
+    --tan-4: #ffffff;
     --orange: #F67F00;
     --text-light: #968c84;
     --text-dark: #615954;
@@ -85,10 +85,13 @@
   }
   
   .form-container {
+    display: flex;
     padding: 3vmin;
     background-color: var(--tan-1);
     border: .1vmin solid var(--tan-3);
     border-radius: 1vmin;
+    margin-left: 80%;
+    
   }
   
   p.error-message {
@@ -126,7 +129,7 @@
   button, a.button {
     margin: 1vmin;
     padding: 1vmin;
-    color: var(--white);
+    color: var(--text-dark);
     background-color: var(--orange);
     font-size: 2vmin;
     font-weight: bold;
@@ -156,4 +159,18 @@
   button[type="submit"] {
     grid-column: span 2;
     margin: 1vmin 0 0;
+  }
+
+  nav {
+    display: inline-block;
+  }
+
+  .authpic {
+    background-image: url('https://mapmy.uastatic.com/8180b5a304c9fe999b3e13eda2368d9f.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .app-name{
+    color: red;
   }

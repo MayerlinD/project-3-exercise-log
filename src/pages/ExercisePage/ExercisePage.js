@@ -66,7 +66,7 @@ export default function ExercisePage(props){
             const subject = exercisesCopy[index]
             subject.completed = true 
             const response = await fetch(`/api/exercises/${id}`, {
-                method: 'PUT',
+                method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -100,6 +100,7 @@ export default function ExercisePage(props){
         getExercises()
     }, [])
     return(<>
+        <button onClick={() => logOut() }>Log Out</button><br></br>
         Description:<input type="text" 
         value={newExercise.description} 
         onChange={(e) => {
@@ -145,6 +146,5 @@ export default function ExercisePage(props){
                 </div>
             )})
         } */}
-        <button onClick={() => logOut() }>Log Out</button>
     </>)
 }

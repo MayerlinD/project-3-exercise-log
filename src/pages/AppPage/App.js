@@ -25,6 +25,7 @@ function App() {
     
     return (
       <main className="App">
+        <h1 className='app-name'>My Fitness Tracker</h1>
         {
           hasJWT() ?
           <>
