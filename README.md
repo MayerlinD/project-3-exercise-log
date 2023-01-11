@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# My Fitness Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A MERN stack web app that allows you to track your workouts all year long!
 
-## Available Scripts
+## Getting Started
 
-In the project directory, you can run:
+[Trello Board](https://trello.com/b/h14dnWjV/my-fitness-tracker)
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+* HTML
+* CSS
+* MongoDB
+* Mongoose
+* Express
+* ReactJS
+* Node.js
+* Axios
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Wireframe
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![](Fitness%20Tracker%20Wireframe.png)
 
-### `npm run build`
+### ERD
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![](Screen%20Shot%202023-01-11%20at%205.20.07%20PM.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Unsolved Problems
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+* Edit exercises
 
-### `npm run eject`
+### Future Enhancements
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+This project is still in its initial phase and is not at its envisioned state. The future enhancements will be to:
+* Implement a landing page and Navigation Bar
+* Incorporate weight and food tracking through a third-party API
+* Sync data with fitness devices
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

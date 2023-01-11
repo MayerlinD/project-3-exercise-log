@@ -3,7 +3,7 @@ import { logOut } from '../../utilities/users-service';
 const user = localStorage.getItem('user')
 
 
-export default function ExercisePage(props){
+export default function ExercisePage(){
     console.log('Props from excercise page')
     console.log(user)
     const [user1, setUser1] = useState(user)
@@ -40,25 +40,7 @@ export default function ExercisePage(props){
             console.error(error)
         }
     }
-    //deleteExercises
-    // const deleteExercise = async (id) => {
-    //     try {
-    //         const index = completedExercises.findIndex((exercise) => exercise._id === id)
-    //         const completedExercisesCopy = [...completedExercises]
-    //         const response = await fetch(`/api/exercises/${id}`, {
-    //             method: 'DELETE',
-    //             headers: {
-    //                 'Content-Type': 'application/json'
-    //             }
-    //         })
-    //         await response.json()
-    //         completedExercisesCopy.splice(index, 1)
-    //         setCompletedExercises(completedExercisesCopy)
-    //     } catch (error) {
-    //         console.error(error)
-    //     }
-    // }
-    //moveToCompleted
+  
     const moveToCompleted = async (id) => {
         try {
             const index = exercises.findIndex((exercise) => exercise._id === id)
@@ -66,7 +48,7 @@ export default function ExercisePage(props){
             const subject = exercisesCopy[index]
             subject.completed = true 
             const response = await fetch(`/api/exercises/${id}`, {
-                method: 'DELETE',
+                method: 'PUT',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -100,7 +82,8 @@ export default function ExercisePage(props){
         getExercises()
     }, [])
     return(<>
-        <button onClick={() => logOut() }>Log Out</button><br></br>
+         <button id='logout' onClick={() => logOut() }>Log Out</button><br></br>
+        <div className='exercise-page'><br></br></div>
         Description:<input type="text" 
         value={newExercise.description} 
         onChange={(e) => {
@@ -130,14 +113,17 @@ export default function ExercisePage(props){
         />
         
         
+        
         <h3>Exercises</h3>
+        <div id='table'>
         {exercises.map(exercise => {
             return(
-                <div key={exercise._id}>{exercise.description}<br />{exercise.duration}<br />{exercise.date}<br />
+                <div id='exercise-div' key={exercise._id}>{exercise.date}<br />{exercise.description}<br />{exercise.duration}<br />
                     <button onClick={() => moveToCompleted(exercise._id) }>Delete Exercise</button>
                 </div>
             )})
         }
+        </div>
         {/* <h3>Completed Exercises</h3>
         {completedExercises.map(exercise => {
             return(

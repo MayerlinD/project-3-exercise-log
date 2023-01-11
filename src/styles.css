@@ -174,3 +174,34 @@
   .app-name{
     color: red;
   }
+
+  .exercise-page {
+    background-image: url('https://images.squarespace-cdn.com/content/v1/5b6491053c3a53415bc65889/1550590814114-5WNZTLSO5SXL5HW41OTK/Run-for-Animals-Website-Banner-3-1030x295.png?format=2500w');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 10%;
+  }
+
+  #logout {
+    margin-left: 90%;
+  }
+
+  #table {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat();
+    font-size: 2em;
+    margin: 4em;
+    margin-bottom: 2em;
+    margin-top: 2em;
+  
+  }
+
+  #exercis-div {
+    display: table;
+    clear: both;
+    border: 2px solid #9d8c84;
+    padding: 30px;
+    font-weight: 1000;
+    overflow: hidden;
+  }
