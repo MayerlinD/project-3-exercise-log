@@ -8,7 +8,6 @@ A MERN stack web app that allows you to track your workouts all year long!
 
 ## Technologies Used
 
-* HTML
 * CSS
 * MongoDB
 * Mongoose
