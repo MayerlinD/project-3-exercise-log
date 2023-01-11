@@ -5,6 +5,8 @@ A MERN stack web app that allows you to track your workouts all year long!
 ## Getting Started
 
 [Deployed App](https://myfitnesslog.herokuapp.com/)
+
+
 [Trello Board](https://trello.com/b/h14dnWjV/my-fitness-tracker)
 
 ## Technologies Used
