@@ -2,7 +2,8 @@ import { useState, useEffect } from 'react';
 import AuthPage from '../AuthPage/AuthPage';
 import ExercisePage from '../ExercisePage/ExercisePage';
 import NavBar from '../../components/NavBar/NavBar';
-import { Routes, Route} from 'react-router-dom'
+import { BrowserRouter, Routes, Route} from 'react-router-dom'
+import Landing from '../LandingPage/LandingPage';
 
 function App() {
     const [state, setState] = useState(null)
@@ -25,17 +26,14 @@ function App() {
     
     return (
       <main className="App">
-        <h1 className='app-name'>My Fitness Tracker</h1>
         {
           hasJWT() ?
           <>
             <ExercisePage />
             <Routes>
-              
-              <Route path="/" element={<ExercisePage user={{loggedInUser}} />} />
-              {/* <Route path="/orders/new" element={<NewOrderPage />} />
-              <Route path="/orders" element={<OrderHistoryPage/>} />
-              <Route path="/" element={<NewOrderPage />}/> */}
+              {/* <Route path='/' element={<Landing />} />
+              <Route path='/login' element={<AuthPage />} /> */}
+              <Route path="/exercise" element={<ExercisePage user={{loggedInUser}} />} />
             </Routes>
           </>
            :

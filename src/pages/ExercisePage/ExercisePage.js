@@ -48,7 +48,7 @@ export default function ExercisePage(){
             const subject = exercisesCopy[index]
             subject.completed = true 
             const response = await fetch(`/api/exercises/${id}`, {
-                method: 'PUT',
+                method: 'DELETE',
                 headers: {
                     'Content-Type': 'application/json'
                 },
@@ -124,13 +124,5 @@ export default function ExercisePage(){
             )})
         }
         </div>
-        {/* <h3>Completed Exercises</h3>
-        {completedExercises.map(exercise => {
-            return(
-                <div key={exercise._id}>{exercise.username}{exercise.description}{exercise.duration}{exercise.date} 
-                    <button onClick={() => deleteExercise(exercise._id) }>Delete</button>
-                </div>
-            )})
-        } */}
     </>)
 }
